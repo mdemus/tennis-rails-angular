@@ -32,9 +32,18 @@ app.config(function($routeProvider) {
             templateUrl: 'views/user_sessions/new.html',
             controller: 'UserSessionsCtrl'
         })
+        .when('/sign_up', {
+            templateUrl: 'views/user_registrations/new.html',
+            controller: 'UserRegistrationsCtrl'
+        })
         .when('/groups', {
             templateUrl: 'views/groups.html',
-            controller: 'GroupsCtrl'
+            controller: 'GroupsCtrl',
+            resolve: {
+                auth: ['$auth', function($auth) {
+                    return $auth.validateUser();
+                }]
+            }
         })
         .otherwise({
             redirectTo: '/'
@@ -50,7 +59,26 @@ app.factory('Group', ['$resource', function($resource) {
 }]);
 
 app.run(['$rootScope', '$location', function($rootScope, $location) {
+    $rootScope.$on("$routeChangeSuccess", function(angularEvent, currentRoute, previousRoute) {
+        $rootScope.isActive = function(viewLocation) {
+            var active = (viewLocation === $location.path());
+            return active;
+        };
+    });
     $rootScope.$on('auth:login-success', function() {
         $location.path('/');
+        $rootScope.$broadcast('displaySuccess', 'logged in');
+    });
+    $rootScope.$on('displayError', function(event, data) {
+        $rootScope.errorMessage = data; // 'Data to send'
+    });
+    $rootScope.$on('displaySuccess', function(event, data) {
+        $rootScope.errorSuccess = data; // 'Data to send'
+    });
+    $rootScope.$on('displayWarning', function(event, data) {
+        $rootScope.errorWarning = data; // 'Data to send'
+    });
+    $rootScope.$on('displayInfo', function(event, data) {
+        $rootScope.errorInfo = data; // 'Data to send'
     });
 }]);

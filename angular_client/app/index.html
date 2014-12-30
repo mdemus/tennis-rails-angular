@@ -26,13 +26,15 @@
     <div class="container">
         <div class="header">
             <ul class="nav nav-pills pull-right">
-                <li class="active"><a ng-href="#">Home</a>
+                <li ng-class="{ active: isActive('/') }"><a ng-href="#/">Home</a>
                 </li>
-                <li><a ng-href="#/about">About</a>
+                <li ng-class="{ active: isActive('/about') }" ><a ng-href="#/about">About</a>
                 </li>
-                <li><a ng-href="#/groups">Groups</a>
+                <li ng-show="user.id" ng-class="{ active: isActive('/groups') }" ><a ng-href="#/groups">Groups</a>
                 </li>
-                <li ng-show="!user.id"><a ng-href="#/sign_in">Sign in</a>
+                <li ng-class="{ active: isActive('/sign_in') }" ng-show="!user.id"><a ng-href="#/sign_in">Sign in</a>
+                </li>
+                <li ng-class="{ active: isActive('/sign_up') }" ng-show="!user.id"><a ng-href="#/sign_up">Sign up</a>
                 </li>
                 <li ng-show="user.id"><a ng-click='signOut()'>Sign out</a>
                 </li>
@@ -41,6 +43,12 @@
             </ul>
             <h3 class="text-muted">fakeLunchHub</h3>
         </div>
+        
+        <div class="alert alert-danger" role="alert" ng-show="errorMessage"> {{errorMessage}} </div>
+        <div class="alert alert-success" role="alert" ng-show="errorSuccess"> {{errorSuccess}} </div>
+        <div class="alert alert-warning" role="alert" ng-show="errorWarning"> {{errorWarning}} </div>
+        <div class="alert alert-info" role="alert" ng-show="errorInfo"> {{errorInfo}} </div>
+
 
         <div ng-view=""></div>
 
@@ -97,6 +105,8 @@
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/groups.js"></script>
     <script src="scripts/controllers/user_sessions.js"></script>
+    <script src="scripts/controllers/user_registration.js"></script>
+
 
     <!-- endbuild -->
 </body>

@@ -1,0 +1,365 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/Gemfile",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/config/database.yml",
+			"settings":
+			{
+				"buffer_size": 2999,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/assets/javascripts/app.js",
+			"settings":
+			{
+				"buffer_size": 914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/views/layouts/angular.html.erb",
+			"settings":
+			{
+				"buffer_size": 452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 981,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"HTMLPrettify"
+			],
+			[
+				"Package Control: r",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: tag",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/matthieudemus/Documents/fake_lunch_hub/angular_client/app/scripts/controllers/groups.js",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/config/initializers/devise_token_auth.rb",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/config/initializers/secret_token.rb",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/config/initializers/wrap_parameters.rb",
+		"/Users/matthieudemus/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/Users/matthieudemus/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/matthieudemus/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/angular_client/Gruntfile.js",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/app/controllers/groups_controller.rb",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/angular_client/bower_components/ng-token-auth/dist/ng-token-auth.js",
+		"/Users/matthieudemus/Documents/fake_lunch_hub/angular_client/app/views/main.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fake_lunch_hub",
+			"\n",
+			"emailSignInPath",
+			"9000"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rails-angular-devise"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/Gemfile",
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/config/database.yml",
+					"settings":
+					{
+						"buffer_size": 2999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2196,
+								2196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/assets/javascripts/app.js",
+					"settings":
+					{
+						"buffer_size": 914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								858,
+								858
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/views/layouts/angular.html.erb",
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/matthieudemus/Documents/another_test/rails-angular-devise/app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/matthieudemus/Documents/fake_lunch_hub/angular_client/app/views/user_sessions/fake_lunch_hub.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true
+}
