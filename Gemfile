@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0.rc3'
 
 gem 'rails-api'
+gem 'devise_token_auth', git: 'https://github.com/jasonswett/devise_token_auth.git'
+gem 'omniauth'
+gem 'responders'
 
 gem 'spring', :group => :development
 
