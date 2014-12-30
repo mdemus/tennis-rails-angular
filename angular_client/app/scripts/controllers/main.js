@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name fakeLunchHubApp.controller:MainCtrl
+ * @name tennisContactApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the fakeLunchHubApp
+ * Controller of the tennisContactApp
  */
-angular.module('fakeLunchHubApp')
+angular.module('tennisContactApp')
     .controller('MainCtrl', ['$scope', function($scope) {
         
         $scope.awesomeThings = [

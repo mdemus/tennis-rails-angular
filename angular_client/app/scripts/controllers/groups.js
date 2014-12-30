@@ -2,12 +2,12 @@
  
 /**
  * @ngdoc function
- * @name fakeLunchHubApp.controller:GroupsCtrl
+ * @name tennisContactApp.controller:GroupsCtrl
  * @description
  * # GroupsCtrl
- * Controller of the fakeLunchHubApp
+ * Controller of the tennisContactApp
  */
-angular.module('fakeLunchHubApp')
+angular.module('tennisContactApp')
   .controller('GroupsCtrl', ['$scope', 'Group', function ($scope, Group) {
     $scope.groups = Group.query();
   }]);

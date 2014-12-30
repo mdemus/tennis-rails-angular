@@ -12,6 +12,7 @@ gem 'spring', :group => :development
 
 
 gem 'pg'
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 
 

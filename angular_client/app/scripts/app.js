@@ -2,20 +2,21 @@
 
 /**
  * @ngdoc overview
- * @name fakeLunchHubApp
+ * @name tennisContactApp
  * @description
- * # fakeLunchHubApp
+ * # tennisContactApp
  *
  * Main module of the application.
  */
-var app = angular.module('fakeLunchHubApp', [
+var app = angular.module('tennisContactApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ng-token-auth'
+    'ng-token-auth',
+    'vcRecaptcha'
 ]);
 
 app.config(function($routeProvider) {
@@ -59,7 +60,7 @@ app.factory('Group', ['$resource', function($resource) {
 }]);
 
 app.run(['$rootScope', '$location', function($rootScope, $location) {
-    $rootScope.$on("$routeChangeSuccess", function(angularEvent, currentRoute, previousRoute) {
+    $rootScope.$on('$routeChangeSuccess', function(/*angularEvent, currentRoute, previousRoute*/) {
         $rootScope.isActive = function(viewLocation) {
             var active = (viewLocation === $location.path());
             return active;
