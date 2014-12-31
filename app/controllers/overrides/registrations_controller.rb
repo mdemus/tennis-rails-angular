@@ -1,7 +1,7 @@
 module Overrides
   require 'net/http'
   class RegistrationsController < DeviseTokenAuth::RegistrationsController
-  	def create
+    def create
       if not params['recaptachaResponse'].nil? and validateRecaptcha params['recaptachaResponse']
         super
       else
@@ -11,14 +11,14 @@ module Overrides
           errors: ["recaptacha error"]
         }, status: 403
       end
-  	end
+    end
     def validateRecaptcha(response)
       verify_hash = {
-            "secret"    => '6LfM2P8SAAAAAGrpRopAHe-R_Y5XFyjqEKdCWYQt',
-            
-            "response"  => response
-          }
-      
+        "secret"    => '6LfM2P8SAAAAAGrpRopAHe-R_Y5XFyjqEKdCWYQt',
+
+        "response"  => response
+      }
+
       result = Net::HTTP.get(URI.parse('https://www.google.com/recaptcha/api/siteverify' + '?' + verify_hash.to_query))
       logger.debug(verify_hash)
       logger.debug(result)
