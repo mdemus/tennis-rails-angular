@@ -59,8 +59,8 @@ app.factory('Group', ['$resource', function($resource) {
     });
 }]);
 
-app.run(['$rootScope', '$location', function($rootScope, $location) {
-    $rootScope.$on('$routeChangeSuccess', function(/*angularEvent, currentRoute, previousRoute*/) {
+app.run(['$rootScope', '$location', '$timeout', function($rootScope, $location, $timeout) {
+    $rootScope.$on('$routeChangeSuccess', function( /*angularEvent, currentRoute, previousRoute*/ ) {
         $rootScope.isActive = function(viewLocation) {
             var active = (viewLocation === $location.path());
             return active;
@@ -71,15 +71,19 @@ app.run(['$rootScope', '$location', function($rootScope, $location) {
         $rootScope.$broadcast('displaySuccess', 'logged in');
     });
     $rootScope.$on('displayError', function(event, data) {
-        $rootScope.errorMessage = data; // 'Data to send'
+        $rootScope.alertMessage = data;
+        $timeout(function(){$rootScope.alertMessage = '';}, 5000); 
     });
     $rootScope.$on('displaySuccess', function(event, data) {
-        $rootScope.errorSuccess = data; // 'Data to send'
+        $rootScope.alertSuccess = data;
+        $timeout(function(){$rootScope.alertSuccess = '';}, 3000);  
     });
     $rootScope.$on('displayWarning', function(event, data) {
-        $rootScope.errorWarning = data; // 'Data to send'
+        $rootScope.alertWarning = data;
+        $timeout(function(){$rootScope.alertWarning = '';}, 4000); 
     });
     $rootScope.$on('displayInfo', function(event, data) {
-        $rootScope.errorInfo = data; // 'Data to send'
+        $rootScope.alertInfo = data;
+        $timeout(function(){$rootScope.alertInfo = '';}, 3000);
     });
 }]);

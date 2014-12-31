@@ -15,6 +15,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body ng-app="tennisContactApp">
@@ -28,9 +29,9 @@
             <ul class="nav nav-pills pull-right">
                 <li ng-class="{ active: isActive('/') }"><a ng-href="#/">Home</a>
                 </li>
-                <li ng-class="{ active: isActive('/about') }" ><a ng-href="#/about">About</a>
+                <li ng-class="{ active: isActive('/about') }"><a ng-href="#/about">About</a>
                 </li>
-                <li ng-show="user.id" ng-class="{ active: isActive('/groups') }" ><a ng-href="#/groups">Groups</a>
+                <li ng-show="user.id" ng-class="{ active: isActive('/groups') }"><a ng-href="#/groups">Groups</a>
                 </li>
                 <li ng-class="{ active: isActive('/sign_in') }" ng-show="!user.id"><a ng-href="#/sign_in">Sign in</a>
                 </li>
@@ -43,11 +44,23 @@
             </ul>
             <h3 class="text-muted">tennisContact</h3>
         </div>
-        
-        <div class="alert alert-danger" role="alert" ng-show="errorMessage"> {{errorMessage}} </div>
-        <div class="alert alert-success" role="alert" ng-show="errorSuccess"> {{errorSuccess}} </div>
-        <div class="alert alert-warning" role="alert" ng-show="errorWarning"> {{errorWarning}} </div>
-        <div class="alert alert-info" role="alert" ng-show="errorInfo"> {{errorInfo}} </div>
+
+        <div class="alert alert-danger alert-dismissible" role="alert" ng-click="alertMessage=''" ng-show="alertMessage"> {{alertMessage}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+        </div>
+        <div class="alert alert-success alert-dismissible" role="alert" ng-click="alertSuccess=''" ng-show="alertSuccess"> {{alertSuccess}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert" ng-click="alertWarning=''" ng-show="alertWarning"> {{alertWarning}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+        </div>
+        <div class="alert alert-info alert-dismissible" role="alert" ng-click="alertInfo=''" ng-show="alertInfo"> {{alertInfo}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+        </div>
 
 
         <div ng-view=""></div>
@@ -82,7 +95,7 @@
     <script src="bower_components/json3/lib/json3.js"></script>
     <![endif]-->
     <!-- endbuild -->
-    
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
