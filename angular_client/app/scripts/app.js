@@ -70,20 +70,36 @@ app.run(['$rootScope', '$location', '$timeout', function($rootScope, $location, 
         $location.path('/');
         $rootScope.$broadcast('displaySuccess', 'logged in');
     });
+    $rootScope.$on('auth:email-confirmation-success', function() {
+        $location.path('/');
+        $rootScope.$broadcast('displaySuccess', 'email confirme');
+    });
+    $rootScope.$on('auth:email-confirmation-error', function() {
+        $location.path('/');
+        $rootScope.$broadcast('displayError', 'email deja confirme');
+    });
     $rootScope.$on('displayError', function(event, data) {
         $rootScope.alertMessage = data;
-        $timeout(function(){$rootScope.alertMessage = '';}, 5000); 
+        $timeout(function() {
+            $rootScope.alertMessage = '';
+        }, 5000);
     });
     $rootScope.$on('displaySuccess', function(event, data) {
         $rootScope.alertSuccess = data;
-        $timeout(function(){$rootScope.alertSuccess = '';}, 3000);  
+        $timeout(function() {
+            $rootScope.alertSuccess = '';
+        }, 3000);
     });
     $rootScope.$on('displayWarning', function(event, data) {
         $rootScope.alertWarning = data;
-        $timeout(function(){$rootScope.alertWarning = '';}, 4000); 
+        $timeout(function() {
+            $rootScope.alertWarning = '';
+        }, 4000);
     });
     $rootScope.$on('displayInfo', function(event, data) {
         $rootScope.alertInfo = data;
-        $timeout(function(){$rootScope.alertInfo = '';}, 3000);
+        $timeout(function() {
+            $rootScope.alertInfo = '';
+        }, 3000);
     });
 }]);
