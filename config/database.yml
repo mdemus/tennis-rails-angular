@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: fake_lunch_hub_development
+  database: tennis_contact_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: fake_lunch_hub
+  #username: tennis_contact
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: fake_lunch_hub_test
+  database: tennis_contact_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: fake_lunch_hub_production
-  username: fake_lunch_hub
+  database: tennis_contact_production
+  username: tennis_contact
   password: <%= ENV['FAKE_LUNCH_HUB_DATABASE_PASSWORD'] %>
