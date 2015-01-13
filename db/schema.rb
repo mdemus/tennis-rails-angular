@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141217201205) do
+ActiveRecord::Schema.define(version: 20150112203958) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(version: 20141217201205) do
   add_index "groups", ["name"], name: "index_groups_on_name", unique: true, using: :btree
 
   create_table "users", force: true do |t|
-    t.string   "provider",                            null: false
-    t.string   "uid",                    default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "provider",                                  null: false
+    t.string   "uid",                    default: "",       null: false
+    t.string   "encrypted_password",     default: "",       null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,        null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -47,6 +47,35 @@ ActiveRecord::Schema.define(version: 20141217201205) do
     t.text     "tokens"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sport_id",               default: 1,        null: false
+    t.string   "old_password",           default: "tennis", null: false
+    t.string   "nom",                                       null: false
+    t.integer  "type",                   default: 0,        null: false
+    t.string   "prenom",                                    null: false
+    t.datetime "date_naissance",                            null: false
+    t.string   "region"
+    t.string   "departement"
+    t.integer  "code_postal",                               null: false
+    t.string   "ville"
+    t.integer  "niveau"
+    t.string   "club"
+    t.string   "salle"
+    t.string   "dispo"
+    t.string   "varchar"
+    t.integer  "visible",                default: 0
+    t.datetime "last_visite"
+    t.integer  "compt_visite"
+    t.integer  "actif",                  default: 0,        null: false
+    t.integer  "droit",                  default: 0
+    t.integer  "alert_annonce",          default: 1
+    t.integer  "alert_partie",           default: 1
+    t.integer  "alert_tournoi",          default: 1
+    t.integer  "alert_message",          default: 1
+    t.integer  "alert_commentaire",      default: 1
+    t.integer  "alert_newsletter",       default: 1
+    t.integer  "alert_reponse_coach",    default: 1
+    t.string   "facebook_id",            default: "0"
+    t.string   "facebook_url"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
