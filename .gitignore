@@ -50,3 +50,7 @@ bower.json
 #mine
 .DS_Store
 /config/environments/*
+
+*.sublime-workspace
+
+*.sublime-workspace

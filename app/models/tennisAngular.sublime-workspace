@@ -27,7 +27,7 @@
 			"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/index.html",
 			"settings":
 			{
-				"buffer_size": 4716,
+				"buffer_size": 5911,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +35,7 @@
 			"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/scripts/app.js",
 			"settings":
 			{
-				"buffer_size": 2399,
+				"buffer_size": 3074,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/scripts/controllers/user_registration.js",
 			"settings":
 			{
-				"buffer_size": 624,
+				"buffer_size": 1320,
 				"line_ending": "Unix"
 			}
 		},
@@ -102,6 +102,22 @@
 				"buffer_size": 978,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/tennisContact/Gemfile",
+			"settings":
+			{
+				"buffer_size": 604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/matthieudemus/Documents/tennisContact/config/database.yml",
+			"settings":
+			{
+				"buffer_size": 2947,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -135,7 +151,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/matthieudemus/Documents/tennisContact",
@@ -170,7 +186,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -204,7 +220,7 @@
 					"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/index.html",
 					"settings":
 					{
-						"buffer_size": 4716,
+						"buffer_size": 5911,
 						"regions":
 						{
 						},
@@ -232,7 +248,7 @@
 					"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/scripts/app.js",
 					"settings":
 					{
-						"buffer_size": 2399,
+						"buffer_size": 3074,
 						"regions":
 						{
 						},
@@ -312,7 +328,7 @@
 					"file": "/Users/matthieudemus/Documents/tennisContact/angular_client/app/scripts/controllers/user_registration.js",
 					"settings":
 					{
-						"buffer_size": 624,
+						"buffer_size": 1320,
 						"regions":
 						{
 						},
@@ -325,7 +341,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -462,6 +480,60 @@
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/matthieudemus/Documents/tennisContact/Gemfile",
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/matthieudemus/Documents/tennisContact/config/database.yml",
+					"settings":
+					{
+						"buffer_size": 2947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								699,
+								699
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

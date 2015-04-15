@@ -11,7 +11,7 @@ gem 'responders'
 gem 'spring', :group => :development
 
 
-gem 'pg'
+gem 'mysql'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 
